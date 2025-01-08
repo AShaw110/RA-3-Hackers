@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RA^3 Hackers</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #001F54, #0057B8, #003F87);
+            color: white;
+            overflow-x: hidden;
+        }
+        header {
+            background: #002D62;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        header p {
+            margin: 5px 0;
+            font-size: 1.3rem;
+            letter-spacing: 1.5px;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60vh;
+            background: url('https://source.unsplash.com/1600x900/?technology,hacking') no-repeat center center/cover;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 31, 84, 0.6);
+        }
+        .hero-text {
+            position: relative;
+            text-align: center;
+            z-index: 2;
+        }
+        .hero-text h2 {
+            font-size: 2.8rem;
+            margin: 0;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        .about {
+            padding: 30px 20px;
+            background: linear-gradient(135deg, #003F87, #0073E6);
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .about p {
+            font-size: 1.3rem;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .team {
+            text-align: center;
+            padding: 40px;
+            background: #0057B8;
+            color: white;
+        }
+        .team h3 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .team ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            max-width: 600px;
+            font-size: 1.2rem;
+            text-align: left;
+        }
+        .team ul li {
+            margin: 10px 0;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s;
+        }
+        .team ul li:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        footer {
+            background: #001F54;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #4DB8FF;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RA^3 Hackers</h1>
+        <p>The Challengers of Instruo Hacknovare</p>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Welcome to the Future</h2>
+            <p>We are the game changers, innovators, and problem solvers of today. Together, we conquer challenges and shape tomorrow.</p>
+        </div>
+    </section>
+
+    <section class="about">
+        <p>We are RA<sup>3</sup> Hackers, a passionate group of first-year tech enthusiasts from IIEST Shibpur. With our minds set on innovation and our hearts devoted to technology, we take pride in solving real-world problems and pushing the boundaries of what is possible. Our journey has just begun, and the future holds limitless opportunities!</p>
+    </section>
+
+    <section class="team">
+        <h3>Our Team</h3>
+        <ul>
+            <li>Abhradeep</li>
+            <li>Aditya</li>
+            <li>Rohit</li>
+            <li>Anusha</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 RA^3 Hackers. Made with passion for Instruo Hacknovare. <a href="#">Contact Us</a></p>
+    </footer>
+</body>
+</html>
