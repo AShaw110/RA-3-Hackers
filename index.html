@@ -11,13 +11,17 @@
             background: linear-gradient(135deg, #001F54, #0057B8, #003F87);
             color: white;
             overflow-x: hidden;
+            line-height: 1.6;
         }
         header {
             background: #002D62;
             color: white;
             text-align: center;
-            padding: 20px 10px;
+            padding: 30px 20px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
         header h1 {
             margin: 0;
@@ -29,6 +33,7 @@
             margin: 5px 0;
             font-size: 1.3rem;
             letter-spacing: 1.5px;
+            font-weight: 300;
         }
         .hero {
             display: flex;
@@ -37,6 +42,7 @@
             height: 60vh;
             background: url('https://source.unsplash.com/1600x900/?technology,hacking') no-repeat center center/cover;
             position: relative;
+            overflow: hidden;
         }
         .hero::before {
             content: '';
@@ -51,6 +57,7 @@
             position: relative;
             text-align: center;
             z-index: 2;
+            padding: 0 20px;
         }
         .hero-text h2 {
             font-size: 2.8rem;
@@ -61,48 +68,41 @@
         .hero-text p {
             font-size: 1.2rem;
             margin-top: 10px;
+            font-weight: 300;
         }
-        .about {
-            padding: 30px 20px;
-            background: linear-gradient(135deg, #003F87, #0073E6);
-            font-family: 'Arial Narrow', Arial, sans-serif;
-            text-align: center;
-            color: #ffffff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        }
-        .about p {
-            font-size: 1.3rem;
-            line-height: 1.6;
-            max-width: 900px;
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
             margin: 0 auto;
+            box-sizing: border-box;
+            background-color: rgba(0, 31, 84, 0.7);
+            border-radius: 10px;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
         }
-        .team {
-            text-align: center;
-            padding: 40px;
-            background: #0057B8;
-            color: white;
+        section:hover {
+            background-color: rgba(0, 31, 84, 0.9);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
-        .team h3 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        .about p, .team ul li {
+            font-size: 1.3rem;
+            line-height: 1.8;
         }
         .team ul {
             list-style: none;
             padding: 0;
-            margin: 0 auto;
+            margin: 20px 0 0;
             max-width: 600px;
             font-size: 1.2rem;
-            text-align: left;
+            margin: 0 auto;
         }
         .team ul li {
             margin: 10px 0;
-            padding: 10px;
-            background: rgba(0, 0, 0, 0.2);
+            padding: 12px;
+            background: rgba(0, 0, 0, 0.3);
             border-radius: 5px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-            transition: background 0.3s;
+            transition: background 0.3s ease;
         }
         .team ul li:hover {
             background: rgba(255, 255, 255, 0.2);
@@ -111,11 +111,9 @@
             background: #001F54;
             color: white;
             text-align: center;
-            padding: 10px 0;
-        }
-        footer p {
-            margin: 0;
-            font-size: 0.9rem;
+            padding: 15px 20px;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
         }
         footer a {
             color: #4DB8FF;
